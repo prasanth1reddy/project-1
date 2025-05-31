@@ -95,59 +95,10 @@ nav{
     /* Nav bar ends Here */
 
    /* log in page starts here */
-/* 
-.login{
-    color: white;
-    background-color: #2b2a2a;
-    height: auto;
-    width:200px;
-    padding: 20px 50px;
-    top: 10px;
-}
-
-.login>button{
-    background-color: red;
-    width:192px;
-    height: 24px;
-}
-
-input{
-    width: 185px;
-    height: 30px;
-    background-color:#2b2a2a;
-    color: white;
-    border: 1px solid white;
-}
-
-.mediaboxes {
-
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.mediaboxes>.fb{
-    background-color: blue;
-    height: 20px;
-    width: 100px;
-}
-.mediaboxes>.goo{
-    background-color: red;
-    height: 20px;
-    width: 170px;
-}
-.mediaboxes>.twit{
-    background-color: skyblue;
-    height: 30px;
-    width: 300px;
-} */
-
 
 
 .login {
+    margin: 0 auto;
   background-color: #1e1e1e;
   padding: 30px 25px;
   border-radius: 8px;
@@ -190,11 +141,25 @@ input{
   cursor: pointer;
 }
 
-.separate span {
-  display: block;
-  text-align: center;
+.separate{
+  display: flex;
   margin: 15px 0;
+  align-items: center;
+  justify-content: center;
   color: #bbb;
+  font-size: 14px;
+}
+
+.separate span{
+    margin: 0 10px;
+}
+
+.separate::before,
+.separate::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ccc;
 }
 
 .mediaboxes {
@@ -209,7 +174,7 @@ input{
   margin: 0 5px;
   border-radius: 4px;
   color: white;
-  cursor: pointer;
+   cursor: pointer; 
   font-size: 14px;
 }
 
@@ -222,5 +187,45 @@ input{
 }
 
 .twit {
-  background-color: #1da1f2;
+  background-color: skyblue;
 }
+
+
+/* login page ends here */
+
+/* signin page starts here  */
+
+
+.signin {
+    margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 30px 25px;
+  border-radius: 8px;
+  color: #fff;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.signin input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+}
+
+.signin button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* sign in  page ends here */

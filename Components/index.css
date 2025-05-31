@@ -3,6 +3,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* Nav bar starts here */
 .logo{
     color: white;
 }
@@ -89,4 +90,137 @@ nav{
     color: white;
     border: 1px solid white;
     height: 30px;
+}
+
+    /* Nav bar ends Here */
+
+   /* log in page starts here */
+/* 
+.login{
+    color: white;
+    background-color: #2b2a2a;
+    height: auto;
+    width:200px;
+    padding: 20px 50px;
+    top: 10px;
+}
+
+.login>button{
+    background-color: red;
+    width:192px;
+    height: 24px;
+}
+
+input{
+    width: 185px;
+    height: 30px;
+    background-color:#2b2a2a;
+    color: white;
+    border: 1px solid white;
+}
+
+.mediaboxes {
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.mediaboxes>.fb{
+    background-color: blue;
+    height: 20px;
+    width: 100px;
+}
+.mediaboxes>.goo{
+    background-color: red;
+    height: 20px;
+    width: 170px;
+}
+.mediaboxes>.twit{
+    background-color: skyblue;
+    height: 30px;
+    width: 300px;
+} */
+
+
+
+.login {
+  background-color: #1e1e1e;
+  padding: 30px 25px;
+  border-radius: 8px;
+  color: #fff;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.login h4 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ddd;
+}
+
+.login p {
+  font-size: 14px;
+  margin: 5px 0 15px;
+  color: #aaa;
+}
+
+.login input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+}
+
+.login button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.separate span {
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+  color: #bbb;
+}
+
+.mediaboxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mediaboxes p {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.fb {
+  background-color: #3b5998;
+}
+
+.goo {
+  background-color: #db4437;
+}
+
+.twit {
+  background-color: #1da1f2;
 }

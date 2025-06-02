@@ -638,6 +638,68 @@ nav{
 
 
 
+/* media queries for featured products starts here */
+
+/* === Responsive Styles === */
+
+/* Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  .featureheading {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featuredcards {
+    flex: 1 1 90%;
+  }
+}
+
+/* Medium Phones (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .featureheading {
+    justify-content: center;
+  }
+
+  .featuredcards {
+    flex: 1 1 45%;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .featureheading {
+    justify-content: space-evenly;
+  }
+
+  .featuredcards {
+    flex: 1 1 30%;
+  }
+}
+
+/* Laptops (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .featureheading {
+    justify-content: space-between;
+  }
+
+  .featuredcards {
+    flex: 1 1 22%;
+  }
+}
+
+/* Large Desktops (1441px and up) */
+@media (min-width: 1441px) {
+  .featureheading {
+    justify-content: space-around;
+  }
+
+  .featuredcards {
+    flex: 1 1 20%;
+  }
+}
+
+/* media queries for featured products ends here */
+
 
 /* top products starts here */
 
@@ -837,11 +899,61 @@ nav{
 
 /* Our Advantages Ends Here */
 
+/* media queries for our advantages starts here */
+
+/* Phones */
+/* @media (max-width: 480px) {
+  .fonticon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .delivery {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .advantages h2 {
+    font-size: 1.5rem;
+  }
+} */
+
+/* Tablets (portrait & landscape) */
+/* @media (min-width: 481px) and (max-width: 768px) {
+  .fonticon {
+    justify-content: center;
+  }
+
+  .delivery {
+    width: 80%;
+  }
+} */
+
+/* Small Laptops & Large Tablets */
+/* @media (min-width: 769px) and (max-width: 1024px) {
+  .delivery {
+    width: 45%;
+  }
+} */
+
+/* Desktops */
+/* @media (min-width: 1025px) {
+  .delivery {
+    width: 22%;
+  }
+
+  .advantages h2 {
+    font-size: 2.5rem;
+  }
+} */
+
+/* media queries for our advantages ends here */
+
 
 /* footer starts here */
 
 
-.footerstart {
+.footerstart{
   display: flex;
 }
 .content {
@@ -887,10 +999,85 @@ nav{
 
 .footerfonts{
   display: flex;
-  gap: 40px;
-  margin-left: 650px;
+  gap: 30px;
+  margin-right: 100px;
   color: white;
 }
 
 
 /* footer ends here */
+
+
+/* media queries for footer starts here */
+
+/* Small Devices: Mobile phones */
+ @media (max-width: 480px) {
+  .footerstart {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerend {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerfonts {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+ 
+
+/* Medium Devices: Tablets */
+ @media (min-width: 481px) and (max-width: 768px) { 
+  .footerstart {
+    justify-content: space-around;
+  }
+
+  .footerend {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footerfonts {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+ 
+
+/* Large Tablets & Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footerstart {
+    justify-content: space-evenly;
+  }
+
+  .footerfonts {
+    margin-left: 0;
+  }
+
+  .footerend {
+    justify-content: space-between;
+  }
+} 
+
+/* Desktops and Up */
+ @media (min-width: 1025px) {
+  .footerstart {
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+
+  .footerend {
+    justify-content: space-between;
+  }
+
+  .footerfonts {
+    margin-left:auto;
+  }
+}  
+
+/* media queries for footer ends here */

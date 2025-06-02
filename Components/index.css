@@ -441,22 +441,153 @@ nav{
 
 /* hero,carosel section ends here */
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+
+/* media queries starts for hero,carosel section  */
+
+
+/* Small phones (<= 480px) */
+@media (max-width: 480px) {
   .hero-content {
-    flex-direction: column-reverse;
-    text-align: center;
+    flex-direction: column;
     padding: 2rem 1rem;
   }
 
+  .text-content, .image-content {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
   .text-content p {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
+  }
+
+  .text-content pre {
+    font-size: 1.25rem;
+  }
+
+  .text-content h4 {
+    font-size: 1rem;
+  }
+
+  .shop-btn {
+    width: 100%;
+    padding: 0.75rem;
   }
 
   .image-content img {
-    max-width: 80%;
+    max-width: 90%;
+  }
+
+  .text-content::before {
+    font-size: 800px;
+    top: 20%;
   }
 }
+
+/* Medium phones (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero-content {
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .text-content, .image-content {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-size: 2rem;
+  }
+
+  .text-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .shop-btn {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .text-content::before {
+    font-size: 1200px;
+    top: 30%;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+  }
+
+  .text-content, .image-content {
+    flex: 1 1 48%;
+    text-align: left;
+  }
+
+  .text-content p {
+    font-size: 2.25rem;
+  }
+
+  .text-content h4 {
+    font-size: 1.25rem;
+  }
+
+  .shop-btn {
+    padding: 0.75rem 2rem;
+  }
+
+  .text-content::before {
+    font-size: 1600px;
+    top: 30%;
+  }
+}
+
+/* Laptops & small desktops (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .hero-content {
+    padding: 4rem 3rem;
+  }
+
+  .text-content p {
+    font-size: 2.5rem;
+  }
+
+  .text-content h4 {
+    font-size: 1.25rem;
+  }
+
+  .text-content::before {
+    font-size: 2000px;
+    top: 30%;
+  }
+}
+
+/* Large desktops (>= 1441px) */
+@media (min-width: 1441px) {
+  .hero-content {
+    padding: 5rem 6rem;
+  }
+
+  .text-content p {
+    font-size: 2.75rem;
+  }
+
+  .text-content h4 {
+    font-size: 1.4rem;
+  }
+
+  .text-content::before {
+    font-size: 2800px;
+    top: 25%;
+  }
+}
+
+/* media queries ends for hero,carosel section */
+
 
 
 
@@ -503,3 +634,263 @@ nav{
 }
 
 
+/* feature products ends here */
+
+
+
+
+/* top products starts here */
+
+.top-products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;-90
+}
+
+.top-products h4 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+/* Filter Buttons */
+.top-products ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.top-products ul li:first-child{
+    background-color: #ff3c3c;
+
+}
+
+.top-products ul li {
+    background-color: #222;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.top-products ul li:hover,
+.top-products ul li.active {
+    background-color: #ff3c3c;
+    color: white;
+}
+
+/* Cards Container */
+.top-products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Individual Product Card */
+.top-product {
+    width: 250px;
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 60, 60, 0.2);
+}
+
+/* Product Image */
+.top-product img {
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.top-product .rating{
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+}
+
+.top-product .rating i.fa-star{
+    color: #ff3c3c;
+}
+
+/* Product Text */
+.top-product h6 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.top-product p {
+    font-size: 13px;
+    color: #a09e9e;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.top-product hr{
+    color: whitesmoke;
+}
+
+/* Price Styling */
+.top-product .price {
+    color: white;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.top-product .price span {
+    color: #a09e9e;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+/* Button */
+.top-product .add-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #ff3c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.top-product .add-btn:hover {
+    background-color: #e23232;
+}
+
+.top-product.browse-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.top-product.browse-card p{
+  font-size: x-large;
+  color: whitesmoke;
+}
+
+/* Top Products Ends Here */
+
+
+/* Our Advantages Starts here */
+
+
+.advantages{
+  margin-bottom: 70px;
+}
+
+.advantages h2{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  
+}
+
+
+.delivery{
+  display: flex;
+  margin: 50px;
+}
+.delivery i{
+  color: red;
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-left: 20px;
+
+}
+
+.delivery h5{
+    color: white;
+    margin-left: 20px;
+}
+.delivery p{
+  color: #444;
+  margin-left: 20px;
+}
+.fonticon{
+  display: flex;
+  justify-content: center;
+}
+
+/* Our Advantages Ends Here */
+
+
+/* footer starts here */
+
+
+.footerstart {
+  display: flex;
+}
+.content {
+  height: 200px;
+  width: 400px;
+  margin-left: 100px;
+}
+.content h3,h5{
+  color: white;
+  margin-bottom: 40px;
+}
+
+.content li,p{
+  color: #444;
+}
+
+.footerstart .content input{
+  background-color: black;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  color: #444;
+}
+
+.footerstart .content button{
+  color: white;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.footer hr{
+  margin-top: 50px;
+  border: 1px solid #444;
+
+}
+
+.footerend{
+  display:flex ;
+}
+.footerend .copyrights p{
+  color: white;
+}
+
+.footerfonts{
+  display: flex;
+  gap: 40px;
+  margin-left: 650px;
+  color: white;
+}
+
+
+/* footer ends here */

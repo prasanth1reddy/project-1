@@ -460,3 +460,46 @@ nav{
 
 
 
+/* Featured products Starts here */
+
+.featuredproducts h2{
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+.featureheading {
+  
+  display: flex;
+  overflow: hidden;
+
+}
+.featuredcards{
+  width: 20%;
+}
+
+.featureheading img {
+  height: 250px;
+  
+}
+
+.featureheading h4{
+  color:#444;
+}
+
+.featureheading span{
+  color: white;
+  font-size: x-large;
+}
+
+.featureheading strike{
+  font-size: medium;
+  color: #444;
+}
+.featuredcards h4{
+  text-align: center;
+}
+
+

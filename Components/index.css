@@ -879,7 +879,7 @@ nav{
 .delivery i{
   color: red;
   font-size: xx-large;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 20px;
 
 }
@@ -887,6 +887,7 @@ nav{
 .delivery h5{
     color: white;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 .delivery p{
   color: #444;
@@ -902,7 +903,7 @@ nav{
 /* media queries for our advantages starts here */
 
 /* Phones */
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
   .fonticon {
     flex-direction: column;
     align-items: center;
@@ -916,10 +917,10 @@ nav{
   .advantages h2 {
     font-size: 1.5rem;
   }
-} */
+}
 
 /* Tablets (portrait & landscape) */
-/* @media (min-width: 481px) and (max-width: 768px) {
+ @media (min-width: 481px) and (max-width: 768px) {
   .fonticon {
     justify-content: center;
   }
@@ -927,17 +928,17 @@ nav{
   .delivery {
     width: 80%;
   }
-} */
+}
 
 /* Small Laptops & Large Tablets */
-/* @media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .delivery {
     width: 45%;
   }
-} */
+} 
 
 /* Desktops */
-/* @media (min-width: 1025px) {
+@media (min-width: 1025px) {
   .delivery {
     width: 22%;
   }
@@ -945,7 +946,7 @@ nav{
   .advantages h2 {
     font-size: 2.5rem;
   }
-} */
+} 
 
 /* media queries for our advantages ends here */
 

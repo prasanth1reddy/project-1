@@ -70,17 +70,18 @@ nav{
 
 .profilecard{
     display: none;
-     position:absolute;
+    position:absolute;
     border-radius: 2px;
-    top: 100%;
-    left: 100%;
-    transform:translateX(-100%) ;
+    top: 120%;
+    left: 40%;
+    transform: translateX(-100%);
     border: 1px solid white;
     background-color:#292828;
     color: white;
     padding: 15px 15px;
     font-size: small;
     width: 250px;
+    z-index: 20;
     
 
 }
@@ -98,6 +99,183 @@ nav{
 }
 
     /* Nav bar ends Here */
+
+
+/* log in page starts here */
+
+
+.login {
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 30px 25px;
+  border-radius: 8px;
+  color: #fff;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 999;
+  left: 35%;
+  display: none;
+}
+
+.login p a{
+  position: static;
+  text-decoration: none;
+  color: #ff3c3c;
+}
+
+.login a{
+  position: absolute;
+  right: 0;
+  top: -10px;
+  text-decoration: none;
+  color: white;
+}
+
+.login h4 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ddd;
+}
+
+.login p {
+  font-size: 14px;
+  margin: 5px 0 15px;
+  color: #aaa;
+}
+
+.login input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+}
+
+.login button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.separate{
+  display: flex;
+  margin: 15px 0;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.separate span{
+    margin: 0 10px;
+}
+
+.separate::before,
+.separate::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.mediaboxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mediaboxes p {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 4px;
+  color: white;
+   cursor: pointer; 
+  font-size: 14px;
+}
+
+.fb {
+  background-color: #3b5998;
+}
+
+.goo {
+  background-color: #db4437;
+}
+
+.twit {
+  background-color: skyblue;
+} 
+
+
+/* login page ends here */
+
+/* signin page starts here  */
+
+
+.signin {
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 30px 25px;
+  border-radius: 8px;
+  color: #fff;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 999;
+  left: 35%;
+  display: none;
+}
+
+.signin p a{
+  position: static;
+  color: #ff3c3c;
+}
+
+.signin a{
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  top: -10px;
+  right: 0;
+}
+
+.signin input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+}
+
+.signin button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+} 
+
+#login:target,
+#signup:target{
+  display: block;
+}
+
+/* sign in  page ends here */
 
 
     /* product details starts here */

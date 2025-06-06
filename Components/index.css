@@ -1,6 +1,6 @@
 body{
-    background-color: black;
-    font-family:Arial, Helvetica, sans-serif;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Nav bar starts here */
@@ -70,17 +70,18 @@ nav{
 
 .profilecard{
     display: none;
-     position:absolute;
+    position:absolute;
     border-radius: 2px;
-    top: 100%;
-    left: 100%;
-    transform:translateX(-100%) ;
+    top: 120%;
+    left: 40%;
+    transform: translateX(-100%);
     border: 1px solid white;
     background-color:#292828;
     color: white;
     padding: 15px 15px;
     font-size: small;
     width: 250px;
+    z-index: 20;
     
 
 }
@@ -103,13 +104,31 @@ nav{
 
 
 .login {
-    margin: 0 auto;
+  margin: 0 auto;
   background-color: #1e1e1e;
   padding: 30px 25px;
   border-radius: 8px;
   color: #fff;
   width: 320px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 999;
+  left: 35%;
+  display: none;
+}
+
+.login p a{
+  position: static;
+  text-decoration: none;
+  color: #ff3c3c;
+}
+
+.login a{
+  position: absolute;
+  right: 0;
+  top: -10px;
+  text-decoration: none;
+  color: white;
 }
 
 .login h4 {
@@ -202,13 +221,30 @@ nav{
 
 
 .signin {
-    margin: 0 auto;
+  margin: 0 auto;
   background-color: #1e1e1e;
   padding: 30px 25px;
   border-radius: 8px;
   color: #fff;
   width: 320px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 999;
+  left: 35%;
+  display: none;
+}
+
+.signin p a{
+  position: static;
+  color: #ff3c3c;
+}
+
+.signin a{
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  top: -10px;
+  right: 0;
 }
 
 .signin input {
@@ -232,6 +268,11 @@ nav{
   font-weight: bold;
   cursor: pointer;
 } 
+
+#login:target,
+#signup:target{
+  display: block;
+}
 
 /* sign in  page ends here */
 
@@ -414,7 +455,7 @@ nav{
 .image-content img {
   width: 100%;
    max-width: 550px;
-  /* animation: float 5s ease-in-out infinite; */ */
+  /* animation: float 5s ease-in-out infinite; */ 
   filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.1));
 }
 
@@ -593,113 +634,86 @@ nav{
 
 /* Featured products Starts here */
 
-.featuredproducts h2{
-  color: white;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
+.featured-products {
+    width: 60vw;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-
-.featureheading {
-  
-  display: flex;
-  overflow: hidden;
-
-}
-.featuredcards{
-  width: 20%;
+.featured-products h4 {
+    margin: 50px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
 }
 
-.featureheading img {
-  height: 250px;
-  
+.product-cards {
+    display: flex;
+    margin: 0 auto;
+    transition: transform 0.6s ease;
+    will-change: transform;
 }
 
-.featureheading h4{
-  color:#444;
+.product-cards .card {
+    flex: 0 0 160px;
+    margin: 0 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.4s ease, z-index 0.4s;
+    transform: scale(0.7);
+    z-index: 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.featureheading span{
-  color: white;
-  font-size: x-large;
+.product-cards .card img {
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
-.featureheading strike{
-  font-size: medium;
-  color: #444;
-}
-.featuredcards h4{
-  text-align: center;
+.product-cards .card h5 {
+    margin: 10px 0 5px;
+    font-size: 1rem;
 }
 
-
-/* feature products ends here */
-
-
-
-/* media queries for featured products starts here */
-
-/* === Responsive Styles === */
-
-/* Small Phones (<= 480px) */
-@media (max-width: 480px) {
-  .featureheading {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .featuredcards {
-    flex: 1 1 90%;
-  }
+.product-cards .card p {
+    font-size: 0.9rem;
+    color: white;
 }
 
-/* Medium Phones (481px - 767px) */
-@media (min-width: 481px) and (max-width: 767px) {
-  .featureheading {
-    justify-content: center;
-  }
-
-  .featuredcards {
-    flex: 1 1 45%;
-  }
+.product-cards .card p span {
+    color: #999;
+    font-size: 0.8rem;
 }
 
-/* Tablets (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .featureheading {
-    justify-content: space-evenly;
-  }
-
-  .featuredcards {
-    flex: 1 1 30%;
-  }
+.card.medium {
+    transform: scale(0.9);
+    z-index: 2;
 }
 
-/* Laptops (1025px - 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .featureheading {
-    justify-content: space-between;
-  }
-
-  .featuredcards {
-    flex: 1 1 22%;
-  }
+.card.active {
+    transform: scale(1.2);
+    z-index: 3;
 }
 
-/* Large Desktops (1441px and up) */
-@media (min-width: 1441px) {
-  .featureheading {
-    justify-content: space-around;
-  }
-
-  .featuredcards {
-    flex: 1 1 20%;
-  }
+.indicators {
+    margin-top: 30px;
+    text-align: center;
 }
 
-/* media queries for featured products ends here */
-
+.indicators button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background: #ff3c3c;
+    margin: 0 3px;
+    cursor: pointer;
+}
 
 /* top products starts here */
 
@@ -708,7 +722,7 @@ nav{
     flex-direction: column;
     width: 100%;
     padding: 40px 20px;
-    box-sizing: border-box;-90
+    box-sizing: border-box;
 }
 
 .top-products h4 {

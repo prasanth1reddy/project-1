@@ -8,6 +8,7 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script  height="100px" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./index.css">
 </head>
@@ -30,7 +31,7 @@
                      <div class="profilecard">
                         <h2>Hello!</h2>
                         <p>Access account and manage orders</p>
-                        <button class="loginbutton">Login/Signup</button>
+                        <button class="loginbutton"><a href="#login">Login/Signup</a></button>
                         <hr>
                         <p>Please Login</p>
                      </div>
@@ -39,10 +40,12 @@
         </nav>
     </header>
     <!-- navbar ends here -->
+     
 <!-- login page starts here -->
-     <!-- <div class="login">
+     <div class="login" id="login">
+        <a href="">x</a>
         <h4>Login</h4>
-        <p>New to Tech-Shop?</p>
+        <p>New to Tech-Shop?<a href="#signup">Create an account</a></p>
         <input type="Email" placeholder="Email"><br><br>
         <input type="text" placeholder="Password"><br><br>
         <button>Login</button><br>
@@ -55,12 +58,13 @@
             <p class="goo">Google</p> 
             <p class="twit">twitter</p> 
         </div>
-    </div>  -->
+    </div>  
     <!-- login page ends here -->
     <!-- signin page starts here -->
-         <!-- <div class="signin">
+         <div class="signin" id="signup">
+          <a href="">x</a>
             <h3>Signup</h3>
-            <p>Already have an account?</p>
+            <p>Already have an account?<a href="#login">Login Here</a></p>
             <input type="text" placeholder="Username">
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Password">
@@ -74,7 +78,7 @@
                 <p class="goo">Google</p> 
                 <p class="twit">twitter</p> 
             </div>
-          </div>  -->
+          </div> 
     <!-- sign in page ends here -->
 
 
@@ -143,48 +147,41 @@
 
 
 <!-- Featured products starts here -->
-     <div class="featuredproducts">
-      <h2>Featured Products</h2>
-
-     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+     
+    <div class="featured-products">
+    <h4>Featured Products</h4>
+    <div class="product-cards" id="productSlider">
+        <div class="card">
+            <h5>JBL Endurance Run Sports</h5>
+            <img src="/images/products/jbl-endu-1.png" alt="JBL Endurance">
+            <p>₹999 <span><strike>₹1,599</strike></span></p>
         </div>
-        <div class="featureheading" >  
-
-            <div class="featuredcards">
-              <h4>JBL Endurance Run Sports</h4>
-              <img src="/images/Products/jbl-endu-1.png" alt="">
-               <pre><span class="price"> ₹13,489 </span><strike>₹19,990</strike></pre>
-            </div>
-            <div class="featuredcards">
-              <h4>boAt Airdopes 203</h4>
-              <img src="/images/Products/boat203-1.png" alt="">
-               <pre><span class="price"> ₹13,489 </span><strike>₹19,990</strike></pre>
-            </div >
-            <div class="featuredcards">
-              <h4>boAt Rockerz 518</h4>
-              <img src="/images/Products/boat518-1.png" alt="">
-               <pre><span class="price"> ₹13,489 </span><strike>₹19,990</strike></pre>
-            </div>
-            <div class="featuredcards">
-              <h4>JBL Tune 760NC</h4>
-              <img src="/images/Products/jbl760nc-1.png" alt="">
-               <pre><span class="price"> ₹13,489 </span><strike>₹19,990</strike></pre>
-            </div>
-            <div class="featuredcards">
-              <h4>boAt Rockerz 255</h4>
-              <img src="/images/Products/boat255r-1.png" alt="">
-               <pre><span class="price"> ₹13,489 </span><strike>₹19,990</strike></pre>
-            </div>
+        <div class="card">
+            <h5>boAt Airdopes 203</h5>
+            <img src="../images/products/boat203-1.png" alt="boat Rockerz">
+            <p>₹1,074 <span><strike>₹3,999</strike></span></p>
         </div>
-      </div>
-     </div>
+        <div class="card">
+            <h5>boAt Rockerz 518</h5>
+            <img src="../images/products/boat518-1.png" alt="boat Rockerz">
+            <p>₹299 <span><strike>₹499</strike></span></p>
+        </div>
+        <div class="card">
+            <h5>JBL Tune 760NC</h5>
+            <img src="../images/products/jbl760nc-1.png" alt="JBL Tune">
+            <p>₹5,999 <span><strike>₹7,999</strike></span></p>
+        </div>
+        <div class="card">
+            <h5>boAt Rockerz 255</h5>
+            <img src="../images/products/boat255r-1.png" alt="boAt Rockerz">
+            <p>₹899 <span><strike>₹2,990</strike></span></p>
+        </div>
+    </div>
 
+    <div class="indicators">
+        <button></button><button></button><button></button><button></button><button></button>
+    </div>
+</div>
 
      <!-- Feature products ends here -->
 
@@ -210,157 +207,159 @@
                     <h6>JBL Live 660NC</h6>
                     <p>Wireless Over-Ear NC Headphones</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹9,999 <span><strike>₹14,999</strike></span></p>
+                    
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/boat518-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>boAt Rockerz 518</h6>
+                    <p>On-Ear Wireless Headphones</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹1,299 <span><strike>₹3,990</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/boat131-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>boAt Airpodes 131</h6>
+                    <p>Wireless In-Ear Earbuds</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹1,099 <span><strike>₹2,990</strike></span></p>
                     <button class="add-btn">Add ro Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/boat110-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>boAt Bassheads 110</h6>
+                    <p>In-Ear Wired Earphones</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹499 <span><strike>₹999</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/boat410-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>boAt Rockerz 410</h6>
+                    <p>Bluetooth & Wired On-Ear Headphones</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹1,599 <span><strike>₹2,990</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/jbl200bt-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>JBL Live 200BT</h6>
+                    <p> In-Ear Wireless Neckbands</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹3,699 <span><strike>₹2,599</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/sonyXb910n-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>Sony WH-XB910N</h6>
+                    <p>Wireless Over-Ear Headphones</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹13,489 <span><strike>₹19,990</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
+
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/jbl760nc-1.png" alt="JBL 760NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
+                    <h6>JBL Tune 760NC</h6>
                     <p>Wireless Over-Ear NC Headphones</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹5,999 <span><strike>₹7,999</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/boat255r-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>boAt Rockerz 255</h6>
+                    <p>In-Ear Wireless Neckbands</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹899 <span><strike>₹2,990</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/jbl100-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>JBL Wave 100</h6>
+                    <p>In-Ear Truly Wireless Earbuds</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹2,999 <span><strike>₹6,999</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
 
             <div class="top-product">
-                <img src="../images/products/jbl660nc-1.png" alt="JBL 600NC">
+                <img src="../images/Products/sony1000xm4-1.png" alt="JBL 600NC">
                 <div class="desc">
                     <div class="rating">
                         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                             class="fa-regular fa-star"></i>
                     </div>
-                    <h6>JBL Live 660NC</h6>
-                    <p>Wireless Over-Ear NC Headphones</p>
+                    <h6>Sony WF-1000XM4</h6>
+                    <p>Wireless In-Ear NC Headphones</p>
                     <hr>
-                    <p class="price">$9,999 <span><strike>$14,999</strike></span></p>
+                    <p class="price">₹19,990 <span><strike>₹24,990</strike></span></p>
                     <button class="add-btn">Add to Cart</button>
                 </div>
             </div>
@@ -484,14 +483,61 @@
 
   <!-- footer ends here -->
 
+  <script>
+    const slider = document.getElementById('productSlider');
+    const visibleCount = 5;
+    let cards = Array.from(slider.children);
 
+    // Duplicate for seamless loop
+    cards.forEach(card => slider.appendChild(card.cloneNode(true)));
 
+    let allCards = Array.from(slider.children);
+    let currentIndex = visibleCount;
 
+    function updateSliderPosition() {
+        const cardWidth = allCards[0].offsetWidth + 20; // card + margin
+        const offset = currentIndex - Math.floor(visibleCount / 2);
+        slider.style.transform = `translateX(${-offset * cardWidth}px)`;
+    }
 
+    function updateCardClasses() {
+        allCards.forEach((card, i) => {
+            card.classList.remove('active', 'medium');
+            if (i === currentIndex) {
+                card.classList.add('active');
+            } else if (i === currentIndex - 1 || i === currentIndex + 1) {
+                card.classList.add('medium');
+            }
+        });
+    }
 
+    function slideLeftToRight() {
+        currentIndex++;
+        if (currentIndex >= allCards.length - visibleCount) {
+            slider.style.transition = 'none';
+            currentIndex = visibleCount;
+            updateSliderPosition();
 
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    slider.style.transition = 'transform 0.6s ease';
+                    currentIndex++;
+                    updateSliderPosition();
+                    updateCardClasses();
+                });
+            });
+        } else {
+            updateSliderPosition();
+            updateCardClasses();
+        }
+    }
 
-<script  height="100px" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    // Init styles and animation
+    slider.style.transition = 'transform 0.6s ease';
+    updateSliderPosition();
+    updateCardClasses();
+    setInterval(slideLeftToRight, 2000);
+</script>
 
 </body>
 </html>
